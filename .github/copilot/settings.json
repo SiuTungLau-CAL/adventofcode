@@ -1,8 +1,10 @@
 {
   "extraKnownMarketplaces": {
     "team-copilot": {
-      "source": "github",
-      "repo": "SiuTungLau-CAL/sub-module"
+      "source": {
+        "source": "github",
+        "repo": "SiuTungLau-CAL/sub-module"
+      }
     }
   },
   "enabledPlugins": {
