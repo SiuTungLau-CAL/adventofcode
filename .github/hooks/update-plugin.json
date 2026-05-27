@@ -4,9 +4,9 @@
     "sessionStart": [
       {
         "type": "command",
-        "bash": "copilot plugin update team-copilot-tools@team-copilot 2>/dev/null || true",
-        "powershell": "copilot plugin update team-copilot-tools@team-copilot 2>$null; exit 0",
-        "timeoutSec": 30
+        "bash": "echo \"hook fired: $(date)\" >> /tmp/copilot-hook-test.log",
+        "powershell": "Add-Content -Path \"$env:TEMP\\copilot-hook-test.log\" -Value \"hook fired: $(Get-Date)\"",
+        "timeoutSec": 10
       }
     ]
   }
